@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A clean, beginner-friendly HTML learning hub with structured notes, core concepts, examples, and a guided learning path.">
+  <meta name="theme-color" content="#0b1020">
+  <title>HTML Learning Hub | Atharv Bulkunde</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:dark;--bg:#090d18;--surface:#111827;--surface-2:#151f32;--line:rgba(148,163,184,.17);--text:#f3f6ff;--muted:#98a6bc;--blue:#76a9ff;--cyan:#71e1dc;--violet:#a899ff;--radius:22px;--max:1160px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:radial-gradient(ellipse at 12% 2%,rgba(62,100,190,.16),transparent 32%),radial-gradient(ellipse at 92% 25%,rgba(102,68,180,.12),transparent 30%),var(--bg);color:var(--text);font-family:Manrope,system-ui,sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button{font:inherit}.container{width:min(var(--max),calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:20;background:rgba(9,13,24,.78);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:-.04em}.brand-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;color:#07101f;background:linear-gradient(135deg,var(--cyan),var(--blue));font-family:'DM Mono',monospace;font-weight:500}.nav-links{display:flex;gap:25px;align-items:center;color:var(--muted);font-size:.9rem}.nav-links a:hover,.nav-links a:focus-visible{color:var(--text)}.nav-cta,.button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:11px 16px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.04);color:var(--text);font-weight:700;font-size:.9rem;transition:transform .2s,border-color .2s,background .2s}.button.primary{background:linear-gradient(110deg,#9ae9e1,#a9c4ff);color:#07101f;border:0}.button:hover,.nav-cta:hover{transform:translateY(-2px);border-color:rgba(118,169,255,.65)}.hero{padding:88px 0 64px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:52px}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:7px 11px;border:1px solid rgba(113,225,220,.23);border-radius:999px;background:rgba(113,225,220,.07);color:var(--cyan);font-size:.76rem;font-family:'DM Mono',monospace;letter-spacing:.04em}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}h1{font-size:clamp(2.7rem,6vw,5.1rem);line-height:1.04;letter-spacing:-.07em;margin:22px 0}.gradient{background:linear-gradient(95deg,#fff 5%,#a9c4ff 52%,#71e1dc);-webkit-background-clip:text;background-clip:text;color:transparent}.hero-copy{max-width:620px;color:var(--muted);font-size:1.07rem}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.mini-meta{display:flex;flex-wrap:wrap;gap:18px;margin-top:30px;color:var(--muted);font-size:.82rem}.mini-meta span{display:flex;gap:8px;align-items:center}.preview{position:relative;padding:17px;border:1px solid rgba(148,163,184,.2);border-radius:26px;background:linear-gradient(145deg,rgba(21,31,50,.92),rgba(12,18,32,.9));box-shadow:0 28px 90px rgba(0,0,0,.34);transform:rotate(1deg)}.preview:before{content:"";position:absolute;inset:-1px;border-radius:26px;padding:1px;background:linear-gradient(135deg,rgba(113,225,220,.4),transparent 43%,rgba(168,153,255,.3));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}.window-bar{display:flex;align-items:center;gap:6px;padding:4px 2px 16px;border-bottom:1px solid var(--line)}.window-bar i{width:8px;height:8px;border-radius:50%;background:#5d6b83}.window-bar span{margin-left:8px;color:var(--muted);font:11px 'DM Mono',monospace}.code{font:12px/1.9 'DM Mono',monospace;padding:20px 5px 6px;color:#9fb0c9;overflow:hidden}.code .tag{color:#7ee0d8}.code .attr{color:#a9c4ff}.code .value{color:#f4bd87}.code .comment{color:#667892}.code .indent{padding-left:22px}.preview-foot{display:flex;justify-content:space-between;align-items:center;margin:13px 3px 2px;color:var(--muted);font-size:.74rem}.status{color:var(--cyan);display:flex;align-items:center;gap:6px}.section{padding:58px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:25px}.kicker{font: .76rem 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.12em;color:var(--cyan)}h2{font-size:clamp(1.8rem,3.5vw,2.7rem);line-height:1.15;letter-spacing:-.05em;margin:9px 0}.section-head p,.muted{color:var(--muted)}.section-head p{max-width:530px;margin:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:10px}.stat{padding:20px 22px;background:rgba(17,24,39,.72);border:1px solid var(--line);border-radius:18px}.stat strong{display:block;font-size:1.65rem;letter-spacing:-.05em}.stat span{font-size:.82rem;color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{display:flex;flex-direction:column;min-height:220px;padding:23px;background:linear-gradient(155deg,rgba(21,31,50,.9),rgba(15,22,36,.88));border:1px solid var(--line);border-radius:var(--radius);transition:transform .22s,border-color .22s}.card:hover{transform:translateY(-5px);border-color:rgba(118,169,255,.55)}.card-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:rgba(118,169,255,.1);color:var(--blue);font:500 1rem 'DM Mono',monospace;margin-bottom:21px}.card h3{margin:0 0 8px;font-size:1.05rem;letter-spacing:-.025em}.card p{margin:0 0 19px;color:var(--muted);font-size:.88rem}.card a{margin-top:auto;color:var(--cyan);font-size:.86rem;font-weight:800;display:flex;align-items:center;gap:8px}.path{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;counter-reset:step}.path-item{counter-increment:step;padding:20px;border:1px solid var(--line);border-radius:18px;background:rgba(17,24,39,.63)}.path-item:before{content:"0" counter(step);display:block;margin-bottom:21px;color:var(--cyan);font:12px 'DM Mono',monospace}.path-item h3{font-size:.94rem;margin:0 0 8px}.path-item p{color:var(--muted);font-size:.82rem;margin:0}.callout{display:flex;align-items:center;justify-content:space-between;gap:25px;margin:54px 0 70px;padding:clamp(24px,5vw,42px);border-radius:26px;border:1px solid rgba(118,169,255,.25);background:linear-gradient(115deg,rgba(118,169,255,.11),rgba(113,225,220,.06))}.callout h2{max-width:610px}.callout p{color:var(--muted);max-width:650px;margin-bottom:0}.footer{border-top:1px solid var(--line);padding:26px 0 34px;color:var(--muted);font-size:.82rem}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer a{color:var(--text)}.mobile-toggle{display:none}.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s,transform .6s}.reveal.visible{opacity:1;transform:none}:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;gap:35px;padding-top:62px}.preview{max-width:600px;width:100%;margin:auto}.cards{grid-template-columns:repeat(2,1fr)}.path{grid-template-columns:repeat(2,1fr)}.section-head{align-items:start;flex-direction:column}.callout{align-items:start;flex-direction:column}}
+    @media(max-width:560px){.container{width:min(100% - 28px,var(--max))}.nav{min-height:66px}.nav-links{display:none;position:absolute;top:66px;left:0;right:0;padding:18px 22px 22px;background:#0d1321;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.nav-links.open{display:flex}.mobile-toggle{display:inline-flex}.nav-cta{display:none}.hero{padding:50px 0 35px}h1{font-size:2.8rem}.hero-copy{font-size:.98rem}.stats{grid-template-columns:1fr}.stat{padding:15px 18px}.cards{grid-template-columns:1fr}.path{grid-template-columns:1fr}.card{min-height:190px}.code{font-size:10px}.footer-inner{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="HTML Learning Hub home"><span class="brand-mark">&lt;/&gt;</span><span>HTML<span style="color:var(--cyan)">.hub</span></span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="#curriculum">Curriculum</a><a href="#learning-path">Learning path</a><a href="#about">About</a>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center"><a class="nav-cta" href="https://github.com/AtharvBulkunde/HTML" target="_blank" rel="noreferrer">View repository ↗</a><button class="button mobile-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button></div>
+    </nav>
+  </header>
+  <main id="home">
+    <section class="container hero">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> THE FRONTEND FOUNDATION</div>
+        <h1>Learn the web.<br><span class="gradient">Build with HTML.</span></h1>
+        <p class="hero-copy">A structured home for HTML notes, essential concepts, examples, and the fundamentals behind every great website. Start with the basics, follow the learning path, and build one concept at a time.</p>
+        <div class="hero-actions"><a class="button primary" href="#curriculum">Explore the curriculum <span aria-hidden="true">↘</span></a><a class="button" href="https://github.com/AtharvBulkunde/HTML" target="_blank" rel="noreferrer">Open on GitHub ↗</a></div>
+        <div class="mini-meta"><span>✦ Beginner friendly</span><span>⌘ Organized notes</span><span>◉ Open learning resource</span></div>
+      </div>
+      <div class="preview" aria-label="Sample HTML code preview">
+        <div class="window-bar"><i></i><i></i><i></i><span>index.html</span></div>
+        <div class="code">
+          <div><span class="comment">&lt;!-- Your first webpage --&gt;</span></div>
+          <div><span class="tag">&lt;!doctype html&gt;</span></div>
+          <div><span class="tag">&lt;html</span> <span class="attr">lang</span>=<span class="value">"en"</span><span class="tag">&gt;</span></div>
+          <div class="indent"><span class="tag">&lt;head&gt;</span></div>
+          <div class="indent" style="padding-left:44px"><span class="tag">&lt;title&gt;</span>Hello, web!<span class="tag">&lt;/title&gt;</span></div>
+          <div class="indent"><span class="tag">&lt;/head&gt;</span></div>
+          <div class="indent"><span class="tag">&lt;body&gt;</span></div>
+          <div class="indent" style="padding-left:44px"><span class="tag">&lt;h1&gt;</span>My first page<span class="tag">&lt;/h1&gt;</span></div>
+          <div class="indent" style="padding-left:44px"><span class="tag">&lt;p&gt;</span>Ideas become websites.<span class="tag">&lt;/p&gt;</span></div>
+          <div class="indent"><span class="tag">&lt;/body&gt;</span></div>
+          <div><span class="tag">&lt;/html&gt;</span></div>
+        </div>
+        <div class="preview-foot"><span>semantic • readable • accessible</span><span class="status"><span class="dot"></span> Ready to learn</span></div>
+      </div>
+    </section>
+    <section class="container stats reveal" aria-label="Repository overview">
+      <div class="stat"><strong>04 <span style="display:inline;color:var(--cyan)">/</span></strong><span>Numbered learning sections</span></div>
+      <div class="stat"><strong>Core concepts</strong><span>Syntax, structure, elements, versions</span></div>
+      <div class="stat"><strong>Learn by doing</strong><span>Read a concept, write code, preview it</span></div>
+    </section>
+    <section class="section container" id="curriculum">
+      <div class="section-head reveal"><div><div class="kicker">01 / The curriculum</div><h2>A clear path through HTML</h2></div><p>Jump into a topic, use the notes as a reference, and work through the fundamentals in a logical order.</p></div>
+      <div class="cards">
+        <article class="card reveal"><div class="card-icon">01</div><h3>HTML resources</h3><p>Explore the starter resources and image-related notes in the first section.</p><a href="./1%20-%20HTML/Image.md">Open resources <span>↗</span></a></article>
+        <article class="card reveal"><div class="card-icon">02</div><h3>Topics & syllabus</h3><p>Review the course outline and use it to plan your study sessions.</p><a href="./2%20-%20Topics/syllabus.md">Explore syllabus <span>↗</span></a></article>
+        <article class="card reveal"><div class="card-icon">03</div><h3>Introduction to HTML</h3><p>Start with what HTML does and how it gives structure to web pages.</p><a href="./3%20-%20Introduction/introduction.md">Read introduction <span>↗</span></a></article>
+        <article class="card reveal"><div class="card-icon">04</div><h3>HTML fundamentals</h3><p>Understand basic elements, document structure, and HTML versions.</p><a href="./4%20-%20Basics%20Of%20HTML/Structure%20in%20HTML.md">Learn the basics <span>↗</span></a></article>
+        <article class="card reveal"><div class="card-icon">⟨/⟩</div><h3>Document structure</h3><p>See a simple HTML file and the role of its main document elements.</p><a href="./4%20-%20Basics%20Of%20HTML/Structure%20in%20HTML.html">Open HTML example <span>↗</span></a></article>
+        <article class="card reveal"><div class="card-icon">Aa</div><h3>HTML versions</h3><p>Learn how the HTML standard has evolved and why modern HTML matters.</p><a href="./4%20-%20Basics%20Of%20HTML/Versions%20of%20HTML.md">Compare versions <span>↗</span></a></article>
+      </div>
+    </section>
+    <section class="section container" id="learning-path">
+      <div class="section-head reveal"><div><div class="kicker">02 / Study workflow</div><h2>From first tag to first page</h2></div><p>Keep your learning practical: small steps, short experiments, and regular revision.</p></div>
+      <div class="path">
+        <div class="path-item reveal"><h3>Understand</h3><p>Read the introduction and identify the purpose of HTML.</p></div>
+        <div class="path-item reveal"><h3>Structure</h3><p>Write the doctype, html, head, title, and body sections.</p></div>
+        <div class="path-item reveal"><h3>Practice</h3><p>Try headings, paragraphs, links, images, lists, and semantic elements.</p></div>
+        <div class="path-item reveal"><h3>Build</h3><p>Create a small multi-section webpage and test it in your browser.</p></div>
+      </div>
+    </section>
+    <section class="container reveal" id="about">
+      <div class="callout"><div><div class="kicker">03 / Keep building</div><h2>Good websites start with clear foundations.</h2><p>This repository is a growing collection of HTML learning material by Atharv Bulkunde. Use it to revise concepts, practice markup, and build confidence before moving on to CSS and JavaScript.</p></div><a class="button primary" href="https://github.com/AtharvBulkunde/HTML" target="_blank" rel="noreferrer">Explore the code ↗</a></div>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span>© <span id="year"></span> HTML Learning Hub · Built for learning.</span><span>Created by <a href="https://github.com/AtharvBulkunde" target="_blank" rel="noreferrer">Atharv Bulkunde</a> · <a href="https://github.com/AtharvBulkunde/HTML" target="_blank" rel="noreferrer">GitHub repository ↗</a></span></div></footer>
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    menuToggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(open));
+      menuToggle.textContent = open ? '✕' : '☰';
+    });
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.textContent = '☰';
+    }));
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
